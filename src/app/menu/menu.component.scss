@@ -1,0 +1,27 @@
+header {
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    height: 80px;
+    padding-left: 120px;
+    padding-right: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.mh-logo {
+    height: 80px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    margin-left: 32px;
+    font-weight: 600;
+
+    &:hover {
+        color: rgba(255,255,255,0.8);
+    }
+}
