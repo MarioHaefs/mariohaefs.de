@@ -1,0 +1,83 @@
+.welcome-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.body-img {
+    height: 700px;
+    width: 700px;
+    position: absolute;
+    top: 15%;
+    left: 0;
+    bottom: 0;
+}
+
+.blur-group-img {
+    position: absolute;
+    left: 0%;
+    top: 15%;
+    height: 700px;
+    width: 700px;
+}
+
+.i-am-container {
+    display: flex;
+    position: absolute;
+    right: 5%;
+    top: 30%;
+}
+
+.i-am-text {
+    font-size: 64px;
+    transform: rotate(-90deg);
+    height: 100px;
+    width: 150px;
+    position: absolute;
+    top: 20%;
+    right: 95%;
+}
+
+.my-name {
+    font-size: 90px;
+    font-weight: 700;
+    height: 100px;
+}
+
+.job-title {
+    font-size: 64px;
+    height: 100px;
+}
+
+.presentation-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.button-center {
+    display: flex;
+    justify-content: center;
+}
+
+.lets-talk-button {
+    background-color: #FA7902;
+    width: 150px;
+    color: white;
+    font-size: 23px;
+    border-radius: 10px;
+    padding: 12px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    text-decoration: none;
+    border: 1px;
+    cursor: pointer;
+
+    & {
+        transition: background-color 0.2s ease, transform 0.2s ease;
+    }
+
+    &:hover {
+        background-color: #FF4747;
+        transform: scale(1.2);
+    }
+}
