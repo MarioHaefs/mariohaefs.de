@@ -1,15 +1,13 @@
 header {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 1;
-    height: 80px;
+    height: 100px;
     padding-left: 120px;
     padding-right: 120px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    // position: fixed;
+    // top: 0;
+    z-index: 10;
 }
 
 .logo {
@@ -21,10 +19,32 @@ header {
 a {
     color: white;
     text-decoration: none;
-    margin-left: 32px;
+    margin-left: 40px;
     font-size: 23px;
 
     &:hover {
         color: #FA7902;
     }
+}
+
+a.active-link {
+    position: relative;
+    color: #FA7902;
+
+    &::after {
+        content: "";
+        position: absolute;
+        bottom: -3px;
+        left: 0;
+        right: 0;
+        height: 3px;
+        background-color: #FF4747;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        width: 55px;   
+    }
+}
+
+.orange {
+    color: #FA7902;
 }

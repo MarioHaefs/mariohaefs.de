@@ -1,8 +1,15 @@
+html {
+    background-color: #141D2F;
+}
+
 body {
     margin: 0;
     font-family: 'Poppins', sans-serif;
     color: white;
-    background-color: #1e2b45;
+    width: 100vw;
+    height: 100vh;
+    max-width: 100%;
+    scroll-behavior: smooth;
 }
 
 .red {

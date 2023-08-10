@@ -6,7 +6,7 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./menu.component.scss']
 })
 export class MenuComponent {
-
-  @Input() darkMode = true;
+  activeLink: string = '';
+  activeLanguage: string = '';
 
 }

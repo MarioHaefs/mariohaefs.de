@@ -4,14 +4,16 @@
         <span>M</span>
         <span class="red">a</span>
         <span>r</span>
-        <span class="orange">i</span>
-        <span>o</span>
+        <span>i</span>
+        <span class="orange">o</span>
     </div>
 
     <div>
-        <a routerLink="/">About me</a>
-        <a routerLink="/">Skills</a>
-        <a routerLink="/">Portfolio</a>
+        <a routerLink="/" (click)="activeLink='about'" [class.active-link]="activeLink === 'about'">About me</a>
+        <a routerLink="/" (click)="activeLink='skills'" [class.active-link]="activeLink === 'skills'">Skills</a>
+        <a routerLink="/" (click)="activeLink='portfolio'" [class.active-link]="activeLink === 'portfolio'">Portfolio</a>
+        <a routerLink="/" (click)="activeLanguage='en'" [class.orange]="activeLanguage === 'en'">EN</a>
+        <a routerLink="/" (click)="activeLanguage='de'" [class.orange]="activeLanguage === 'de'">DE</a>
     </div>
 
 </header>
