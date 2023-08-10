@@ -1,14 +1,17 @@
-<header [class.header-dark]="darkMode">
+<header>
 
-
-    <img *ngIf="!darkMode" routerLink="/" class="mh-logo" src="assets/img/MH-logo.png">
-    <img *ngIf="darkMode" routerLink="/" class="mh-logo" src="assets/img/MH-logo-black.png">
-
-    <div [class.dark-links]="darkMode">
-        <a routerLink="/">Home</a>
-        <!-- <a href="#">Curriculum</a>
-        <a href="#">Projects</a> -->
-        <a routerLink="/imprint">Imprint</a>
-        <a routerLink="/data-protection">Data-Protection</a>
+    <div class="logo">
+        <span>M</span>
+        <span class="red">a</span>
+        <span>r</span>
+        <span class="orange">i</span>
+        <span>o</span>
     </div>
+
+    <div>
+        <a routerLink="/">About me</a>
+        <a routerLink="/">Skills</a>
+        <a routerLink="/">Portfolio</a>
+    </div>
+
 </header>
