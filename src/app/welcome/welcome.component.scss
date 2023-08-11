@@ -1,8 +1,14 @@
+.welcome-content {
+    width: 100vw;
+    height: 100vh;
+    max-width: 100%;
+}
+
 .body-img {
     height: 700px;
     width: 700px;
     position: absolute;
-    top: 5%;
+    top: 10%;
     left: 0;
     bottom: 0;
     z-index: 8;
@@ -27,12 +33,12 @@
 }
 
 .i-am-text {
-    font-size: 64px;
+    font-size: 61px;
     transform: rotate(-90deg);
     height: 100px;
     width: 150px;
     position: absolute;
-    top: 20%;
+    top: 16%;
     right: 95%;
 }
 
@@ -40,10 +46,11 @@
     font-size: 90px;
     font-weight: 700;
     height: 100px;
+    letter-spacing: 4px;
 }
 
 .job-title {
-    font-size: 64px;
+    font-size: 55.5px;
     height: 100px;
 }
 
@@ -91,12 +98,12 @@
 
 .social-line {
     position: absolute;
-    bottom: 10%;
+    bottom: 5%;
 }
 
 .github-icon {
     left: 10%;
-    bottom: 9%;
+    bottom: 4%;
     cursor: pointer;
     z-index: 9;
     height: 30px;
@@ -107,7 +114,7 @@
 }
 
 .email-icon {
-    bottom: 9%;
+    bottom: 4%;
     left: 15%;
     cursor: pointer;
     z-index: 9;
@@ -119,7 +126,7 @@
 }
 
 .linkedin-icon {
-    bottom: 9%;
+    bottom: 4%;
     left: 20%;
     cursor: pointer;
     z-index: 9;
@@ -134,9 +141,22 @@
     text-decoration: none;
     color: white;
     left: 25%;
-    bottom: 9%;
+    bottom: 4%;
     font-size: 23px;
     cursor: pointer;
     z-index: 9;
 }
+
+.arrow-down {
+    transform: rotate(-90deg);
+}
+
+.scroll-down {
+    font-size: 20px;
+    transform: rotate(90deg);
+    position: absolute;
+    bottom: 10%;
+    right: 0%;
+}
+
 

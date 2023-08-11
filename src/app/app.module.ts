@@ -6,6 +6,8 @@ import { MenuComponent } from './menu/menu.component';
 import { ImprintComponent } from './imprint/imprint.component';
 import { DataProtectionComponent } from './data-protection/data-protection.component';
 import { WelcomeComponent } from './welcome/welcome.component';
+import { AboutMeComponent } from './about-me/about-me.component';
+import { MySkillsComponent } from './my-skills/my-skills.component';
 
 @NgModule({
   declarations: [
@@ -13,7 +15,9 @@ import { WelcomeComponent } from './welcome/welcome.component';
     MenuComponent,
     ImprintComponent,
     DataProtectionComponent,
-    WelcomeComponent
+    WelcomeComponent,
+    AboutMeComponent,
+    MySkillsComponent
   ],
   imports: [
     BrowserModule,
