@@ -1,4 +1,52 @@
 .my-skills-container {
     padding-left: 100px;
     padding-right: 100px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 150px;
+}
+
+.my-skills-headline-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40%;
+
+    h1 {
+        font-size: 90px;
+        margin-bottom: 16px;
+        margin-top: 0;
+    }
+}
+
+.my-skills-icon-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 60%;
+
+
+    img {
+        height: 60px;
+        width: 60px;
+        margin-bottom: 8px;
+    }
+}
+
+.my-skills-line {
+    position: absolute;
+    left: 118%;
+    top: 50%;
+}
+
+.single-icon-container {
+    display: flex;
+    flex-direction: column;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    align-items: center;
+    font-weight: 700;
+    width: 70px;
+    text-align: center;
 }

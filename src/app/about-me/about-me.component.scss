@@ -1,8 +1,11 @@
 .about-me-container {
     padding-left: 100px;
+    padding-right: 100px;
     display: flex;
+    justify-content: space-between;
     position: relative;
     margin-bottom: 150px;
+    margin-top: 150px;
 }
 
 .h1-about-me {
@@ -19,7 +22,7 @@ p {
 .about-me-content {
     display: flex;
     flex-direction: column;
-    width: 35vw;
+    width: 40vw;
 }
 
 .text-block {
@@ -39,24 +42,18 @@ p {
 .portrait-img {
     height: 400px;
     position: absolute;
-    bottom: 15%;
-    left: 50%;
+    bottom: 7%;
+    left: 64%;
 }
 
 .blur2-img {
     position: absolute;
-    bottom: 5%;
+    bottom: 20%;
     left: 75%;
-}
-
-.circle-line-img {
-    position: absolute;
-    top: 58%;
-    right: 0;
 }
 
 .circle-img {
     position: absolute;
-    top: 27%;
-    left: 47.5%;
+    top: 15%;
+    left: 62%;
 }
