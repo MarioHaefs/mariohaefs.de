@@ -3,7 +3,7 @@
     padding-right: 100px;
     display: flex;
     justify-content: space-between;
-    margin-bottom: 150px;
+    margin-bottom: 200px;
 }
 
 .my-skills-headline-container {
@@ -16,6 +16,7 @@
         font-size: 90px;
         margin-bottom: 16px;
         margin-top: 0;
+        white-space: nowrap;
     }
 }
 
@@ -29,13 +30,47 @@
         height: 60px;
         width: 60px;
         margin-bottom: 8px;
+        animation-duration: 1s;
+        animation-timing-function: ease-in-out;
+
+        &:hover {
+            animation-name: bounce;
+        }
+    }
+}
+
+@keyframes bounce {
+    0%,
+    10%,
+    20%,
+    50%,
+    80%,
+    100% {
+        transform: translateY(0);
+    }
+
+    40% {
+        transform: translateY(-20px);
+    }
+
+    60% {
+        transform: translateY(-10px);
     }
 }
 
 .my-skills-line {
+    width: 60px;
+    height: 0px;
+    border: 2px solid #FF4747;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
     position: absolute;
-    left: 118%;
-    top: 50%;
+    right: 0;
+}
+
+.h1-container {
+    display: flex;
+    align-items: center;
 }
 
 .single-icon-container {
@@ -49,4 +84,17 @@
     font-weight: 700;
     width: 70px;
     text-align: center;
+}
+
+.my-skills-button {
+    width: 200px;
+    white-space: nowrap;
+    margin-top: 32px;
+}
+
+.orange-blur {
+    position: absolute;
+    left: -250px;
+    transform: rotate(40deg);
+    z-index: -1;
 }

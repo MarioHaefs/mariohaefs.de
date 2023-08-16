@@ -1,0 +1,32 @@
+h1 {
+    font-size: 90px;
+    margin: 0;
+    margin-right: 32px;
+    margin-left: 32px;
+}
+
+.h1-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.small-line {
+    width: 50%;
+    height: 4px;
+    border-right: 110px solid #FF4747;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.large-line {
+    width: 50%;
+    height: 4px;
+    background-color: #ff4747;
+}
+
+p {
+    text-align: center;
+    margin-bottom: 150px;
+}

@@ -60,34 +60,6 @@
     flex-direction: column;
 }
 
-.button-center {
-    display: flex;
-    justify-content: center;
-}
-
-.lets-talk-button {
-    background-color: #FA7902;
-    width: 150px;
-    color: white;
-    font-size: 23px;
-    border-radius: 10px;
-    padding: 12px;
-    padding-top: 16px;
-    padding-bottom: 16px;
-    text-decoration: none;
-    border: 1px;
-    cursor: pointer;
-
-    & {
-        transition: background-color 0.2s ease, transform 0.2s ease;
-    }
-
-    &:hover {
-        background-color: #FF4747;
-        transform: scale(1.2);
-    }
-}
-
 .tail-img {
     position: absolute;
     top: 50%;
@@ -98,45 +70,36 @@
 }
 
 .social-line {
-    position: absolute;
-    bottom: 5%;
+    width: 100px;
+    height: 0px;
+    border: 2px solid #FF4747;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
-.github-icon {
-    left: 10%;
-    bottom: 4%;
+.social-icon {
     cursor: pointer;
     z-index: 9;
     height: 30px;
-
-    &:hover {
-        transform: scale(1.1);
-    }
-}
-
-.email-icon {
-    bottom: 4%;
-    left: 15%;
-    cursor: pointer;
-    z-index: 9;
-    height: 30px;
-
-    &:hover {
-        transform: scale(1.1);
-    }
-}
-
-.linkedin-icon {
-    bottom: 4%;
-    left: 20%;
-    cursor: pointer;
-    z-index: 9;
-    height: 30px;
+    transition: transform 0.3s;
 
     &:hover {
         transform: scale(1.2);
     }
 }
+
+.socials-container {
+    position: absolute;
+    bottom: 5%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.margin {
+    margin-right: 32px;
+}
+
 
 .email-link {
     text-decoration: none;
