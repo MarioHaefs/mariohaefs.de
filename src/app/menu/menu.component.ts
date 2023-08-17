@@ -9,4 +9,12 @@ export class MenuComponent {
   activeLink: string = '';
   activeLanguage: string = '';
 
+  scrollToComponent(componentId: string) {
+    let component = document.getElementById(componentId);
+    if (component) {
+      component.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
+  
+
 }
