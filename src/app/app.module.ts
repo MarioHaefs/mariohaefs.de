@@ -13,6 +13,7 @@ import { ProjectLeftComponent } from './project-left/project-left.component';
 import { ProjectRightComponent } from './project-right/project-right.component';
 import { ContactComponent } from './contact/contact.component';
 import { FooterComponent } from './footer/footer.component';
+import { MainPageComponent } from './main-page/main-page.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { FooterComponent } from './footer/footer.component';
     ProjectLeftComponent,
     ProjectRightComponent,
     ContactComponent,
-    FooterComponent
+    FooterComponent,
+    MainPageComponent
   ],
   imports: [
     BrowserModule,

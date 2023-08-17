@@ -1,0 +1,27 @@
+.impressum-content {
+    margin-top: 150px;
+    padding-left: 100px;
+    padding-right: 100px;
+    text-align: left;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    position: relative;
+    margin-bottom: 50px;
+    
+    a {
+        color: white;
+    }
+
+    .arrow-back {
+        height: 50px;
+        position: absolute;
+        right: 10%;
+        cursor: pointer;
+        transition: transform 0.3s;
+
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+  
+}

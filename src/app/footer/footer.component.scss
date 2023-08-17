@@ -1,3 +1,10 @@
+.footer {
+    position: relative;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
 .footer-line {
     width: 100vw;
     height: 0px;
@@ -5,7 +12,7 @@
 }
 
 .footer-container {
-    height: 250px;
+    height: 200px;
     display: flex;
     align-items: center;
     justify-content: space-between;

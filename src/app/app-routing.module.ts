@@ -4,16 +4,18 @@ import { ImprintComponent } from './imprint/imprint.component';
 import { DataProtectionComponent } from './data-protection/data-protection.component';
 import { MenuComponent } from './menu/menu.component';
 import { AppComponent } from './app.component';
+import { MainPageComponent } from './main-page/main-page.component';
 
 
 const routes: Routes = [
-  { path: '', component: AppComponent },
+  { path: '', component: MainPageComponent },
+  { path: 'main-page', component: MainPageComponent },
   { path: 'imprint', component: ImprintComponent },
   { path: 'data-protection', component: DataProtectionComponent }
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes, { scrollPositionRestoration: 'top' })],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
