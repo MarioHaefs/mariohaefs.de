@@ -1,0 +1,99 @@
+.contact-content {
+    padding-left: 100px;
+    padding-right: 100px;
+    width: 100%;
+}
+
+.contact-headline {
+    display: flex;
+    align-items: center;
+    margin-bottom: 64px;
+
+    h1 {
+        font-size: 90px;
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+}
+
+.contact-line {
+    width: 60px;
+    height: 0px;
+    border: 2px solid #FF4747;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    position: absolute;
+    left: 0;
+}
+
+h2 {
+    font-size: 32px;
+    margin-top: 0;
+    margin-bottom: 16px;
+    font-weight: 600;
+}
+
+.contact-text-container {
+    width: 40%;
+    margin-right: 64px;
+}
+
+.contact-form {
+    display: flex;
+    width: 100%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 40vw;
+
+    input {
+        background-color: #141D2F;
+        color: white;
+        border: 1px solid #FF4747;
+        margin-bottom: 32px;
+        border-radius: 10px;
+        padding: 16px;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    textarea {
+        background-color: #141D2F;
+        color: white;
+        border: 1px solid #FF4747;
+        margin-bottom: 32px;
+        border-radius: 10px;
+        padding: 16px;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    button {
+        margin-left: auto;
+        margin-right: auto;
+        white-space: nowrap;
+        width: 250px;
+    }
+
+    ::placeholder {
+        color: white;
+        opacity: 1;
+    }
+
+    input:focus, textarea:focus {
+        outline: none;
+    }
+
+    input:focus::placeholder, textarea:focus::placeholder {
+        color: transparent;
+        opacity: 0;
+    }
+
+    input::placeholder, textarea::placeholder {
+        font-size: 16px;
+        font-weight: 300;
+    } 
+}
+
+
+
