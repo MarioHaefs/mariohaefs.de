@@ -3,6 +3,7 @@
     padding-right: 100px;
     width: 100%;
     margin-bottom: 200px;
+    position: relative;
 }
 
 .contact-headline {
@@ -94,6 +95,21 @@ form {
         font-size: 16px;
         font-weight: 300;
     } 
+}
+
+.blur5 {
+    position: absolute;
+    bottom: -50%;
+    left: -5%;
+    z-index: -1;
+    transform: rotate(-20deg);
+}
+
+.go-up {
+    position: absolute;
+    right: 15%;
+    bottom: -15%;
+    cursor: pointer;
 }
 
 

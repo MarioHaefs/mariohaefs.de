@@ -11,6 +11,9 @@
     justify-content: space-between;
     padding-left: 100px;
     padding-right: 100px;
+    position: relative;
+    z-index: 10;
+    background-color: #141D2F;
 }
 
 .name-logo {
@@ -25,17 +28,24 @@
 }
 
 .impressum {
-    position: relative;  // Notwendig für die korrekte Positionierung des Pseudo-Elements
+    position: relative;
     padding-left: 4px;
     cursor: pointer;
+    text-decoration: none;
+    color: white;
 
     &:hover::before {
         content: "";
         position: absolute;
         bottom: 0;
-        left: 30%;  // Zentriert das Pseudo-Element horizontal
-        transform: translateX(-50%);  // Ermöglicht die zentrierte Positionierung
-        width: 50%;  // Stellen Sie die gewünschte Breite ein
+        left: 28%;
+        transform: translateX(-50%);
+        width: 50%;
         border-bottom: 2px solid #FF4747;
     }
+}
+
+.logo-container {
+    display: flex;
+    flex-direction: column;
 }
