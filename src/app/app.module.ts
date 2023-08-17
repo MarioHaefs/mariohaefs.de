@@ -12,6 +12,7 @@ import { PortfolioComponent } from './portfolio/portfolio.component';
 import { ProjectLeftComponent } from './project-left/project-left.component';
 import { ProjectRightComponent } from './project-right/project-right.component';
 import { ContactComponent } from './contact/contact.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { ContactComponent } from './contact/contact.component';
     PortfolioComponent,
     ProjectLeftComponent,
     ProjectRightComponent,
-    ContactComponent
+    ContactComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

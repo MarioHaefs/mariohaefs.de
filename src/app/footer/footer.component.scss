@@ -1,0 +1,41 @@
+.footer-line {
+    width: 100vw;
+    height: 0px;
+    border: 2px solid #FA7902;
+}
+
+.footer-container {
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.name-logo {
+    font-size: 48px;
+    font-weight: 600;
+    height: 60px;
+    cursor: pointer;
+}
+
+.copyright {
+    font-size: 23px;
+}
+
+.impressum {
+    position: relative;  // Notwendig für die korrekte Positionierung des Pseudo-Elements
+    padding-left: 4px;
+    cursor: pointer;
+
+    &:hover::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 30%;  // Zentriert das Pseudo-Element horizontal
+        transform: translateX(-50%);  // Ermöglicht die zentrierte Positionierung
+        width: 50%;  // Stellen Sie die gewünschte Breite ein
+        border-bottom: 2px solid #FF4747;
+    }
+}

@@ -51,6 +51,21 @@ body {
     }
 }
 
+.social-icon {
+    cursor: pointer;
+    z-index: 9;
+    height: 30px;
+    transition: transform 0.3s;
+
+    &:hover {
+        transform: scale(1.2);
+    }
+}
+
+.margin {
+    margin-right: 32px;
+}
+
 
 // Project Design //
 
