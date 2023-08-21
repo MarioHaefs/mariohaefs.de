@@ -1,5 +1,5 @@
 .impressum-content {
-    margin-top: 150px;
+    margin-top: 100px;
     padding-left: 100px;
     padding-right: 100px;
     text-align: left;
@@ -7,7 +7,7 @@
     overflow-wrap: break-word;
     position: relative;
     margin-bottom: 50px;
-    
+
     a {
         color: white;
     }
@@ -23,5 +23,36 @@
             transform: scale(1.1);
         }
     }
-  
+
+    .go-up-imprint {
+        cursor: pointer;
+        position: absolute;
+        bottom: -32px;
+        right: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+}
+
+
+@media (max-width: 800px) {
+    .go-up-imprint {
+       left: 80% !important;
+       right: 0 !important;
+       transform: none !important;
+    }
+
+    .impressum-content {
+        padding-left: 32px;
+        padding-right: 32px;
+        margin-top: 32px;
+    }
+}
+
+@media (max-width: 400px) {
+    .impressum-content {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
 }

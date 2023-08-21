@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class ImprintComponent {
 
+  scrollTop() {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+  });
+  }
+
 }
