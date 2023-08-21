@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ScrollService } from '../scroll.service';
 
 @Component({
   selector: 'app-welcome',
@@ -6,5 +7,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./welcome.component.scss']
 })
 export class WelcomeComponent {
+
+  constructor(private scrollService: ScrollService) { }
+
+  scrollToComponent(componentId: string) {
+    this.scrollService.scrollToComponent(componentId);
+  }
 
 }

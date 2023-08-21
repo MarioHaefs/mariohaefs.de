@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ScrollService } from '../scroll.service';
 
 @Component({
   selector: 'app-my-skills',
@@ -6,5 +7,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./my-skills.component.scss']
 })
 export class MySkillsComponent {
+
+  constructor(private scrollService: ScrollService) { }
+  
+
+  scrollToComponent(componentId: string) {
+    this.scrollService.scrollToComponent(componentId);
+  }
 
 }

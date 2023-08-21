@@ -1,4 +1,6 @@
 import { Component, Input } from '@angular/core';
+import { ScrollService } from '../scroll.service';
+
 
 @Component({
   selector: 'app-menu',
@@ -9,12 +11,13 @@ export class MenuComponent {
   activeLink: string = '';
   activeLanguage: string = '';
 
+  constructor(private scrollService: ScrollService) { }
+
+
   scrollToComponent(componentId: string) {
-    let component = document.getElementById(componentId);
-    if (component) {
-      component.scrollIntoView({ behavior: 'smooth' });
-    }
+    this.scrollService.scrollToComponent(componentId);
   }
   
+
 
 }

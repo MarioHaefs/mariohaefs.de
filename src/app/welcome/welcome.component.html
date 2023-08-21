@@ -11,7 +11,7 @@
             <span class="my-name">Mario Haefs</span>
             <span class="job-title red">FRONTEND DEVELOPER</span>
             <div class="button-center">
-                <button class="orange-button">Let's talk!</button>
+                <button (click)="scrollToComponent('contact');" class="orange-button">Let's talk!</button>
             </div>
         </div>
     </div>
@@ -20,10 +20,12 @@
 
     <div class="socials-container">
         <div class="social-line margin"></div>
-        <img class="social-icon margin" src="/assets/img/github.png">
-        <img class="social-icon margin" src="/assets/img/email.png">
+        <a class="margin" href="https://github.com/MarioHaefs" target="_blank">
+            <img class="social-icon" src="/assets/img/github.png" alt="Github">
+        </a>
+        <img (click)="scrollToComponent('contact');" class="social-icon margin" src="/assets/img/email.png">
         <img class="social-icon margin" src="/assets/img/linkedin.png">
-        <a class="email-link" href="#">MarioHaefs@t-online.de</a>
+        <a class="email-link" (click)="scrollToComponent('contact');">MarioHaefs@t-online.de</a>
     </div>
     <span class="scroll-down">Scroll down <img class="arrow-down" src="/assets/img/arrow_down.png"></span>
 </div>
