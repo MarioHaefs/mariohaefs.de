@@ -3,21 +3,28 @@
     height: 100vh;
     max-width: 100%;
     overflow: hidden;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.body-container {
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1;
+    padding-right: 100px;
+    padding-left: 100px;
 }
 
 .body-img {
     height: 600px;
-    position: absolute;
-    top: 15%;
-    left: 8%;
-    bottom: 0;
-    z-index: 1;
 }
 
 .blur-group-img {
     position: absolute;
     left: 0%;
-    top: 15%;
+    top: 25%;
     height: 700px;
     width: 700px;
     z-index: -1;
@@ -25,21 +32,15 @@
 
 .i-am-container {
     display: flex;
-    position: absolute;
-    right: 0;
-    top: 30%;
-    padding-right: 100px;
-    z-index: 8;
+    align-items: center;
+    white-space: nowrap;
 }
 
 .i-am-text {
     font-size: 61px;
     transform: rotate(-90deg);
-    height: 100px;
-    width: 150px;
-    position: absolute;
-    top: 16%;
-    right: 95%;
+    padding-left: 65px;
+    padding-top: 100px;
 }
 
 .my-name {
@@ -61,7 +62,7 @@
 
 .tail-img {
     position: absolute;
-    top: 50%;
+    top: 51%;
     right: 0;
     left: 0;
     width: 100%;
@@ -96,19 +97,21 @@
 }
 
 .arrow-down {
-    transform: rotate(-90deg);  
-    position: absolute; 
-    top: 0;
-    padding-top: 20px;
+    transform: rotate(-90deg);
+    margin-left: 8px;
+    object-fit: cover;
 }
 
 .scroll-down {
     font-size: 20px;
     transform: rotate(90deg);
     position: absolute;
-    bottom: 10%;
+    bottom: 5%;
     right: 0%;
     z-index: 5;
+    padding-top: 100px;
+    display: flex;
+    align-items: center;
 }
 
 .button-center {
@@ -118,4 +121,178 @@
 
 .margin {
     margin-right: 32px;
+}
+
+
+
+@media (max-width: 1470px) {
+    .i-am-text {
+        font-size: 48px;
+    }
+
+    .my-name {
+        font-size: 70px;
+        letter-spacing: 0;
+        height: 80px;
+    }
+
+    .job-title {
+        font-size: 40px;
+        height: unset;
+        margin-bottom: 16px;
+    }
+
+    .tail-img {
+        top: 57%;
+    }
+}
+
+@media (max-width: 1275px) {
+    .body-img {
+        height: 500px;
+    }
+
+    .blur-group-img {
+        height: 600px;
+        width: 600px;
+    }
+
+    .i-am-text {
+        font-size: 42px;
+        padding-top: 0px;
+        padding-left: 73px;
+    }
+
+    .my-name {
+        font-size: 60px;
+        letter-spacing: 0;
+        height: 80px;
+    }
+
+    .job-title {
+        font-size: 34px;
+    }
+
+    .presentation-container {
+        margin-left: -50px;
+    }
+}
+
+@media (max-width: 1080px) {
+    .body-img {
+        height: 450px;
+    }
+
+    .blur-group-img {
+        height: 550px;
+        width: 550px;
+    }
+
+    .i-am-text {
+        font-size: 38px;
+        padding-left: 73px;
+    }
+
+    .my-name {
+        font-size: 50px;
+        letter-spacing: 0;
+        height: 70px;
+    }
+
+    .job-title {
+        font-size: 29px;
+    }
+}
+
+@media (max-width: 970px) {
+    .body-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .body-img {
+        position: absolute;
+        left: 50%;
+        top: 40%;
+        transform: translate(-50%, -50%);
+    }
+
+    .blur-group-img {
+        position: absolute;
+        left: 50%;
+        top: 15%;
+        transform: translateX(-50%);
+        z-index: -1;
+        height: 600px;
+        width: 600px;
+    }
+
+    .tail-img {
+        top: 50%;
+    }
+
+    .i-am-container {
+        position: absolute;
+        left: 46%;
+        top: 78%;
+        transform: translate(-50%, -50%);
+    }
+
+    .i-am-text {
+        padding-left: 56px;
+        padding-bottom: 16px;
+    }
+
+    .button-center {
+        padding-right: 40px;
+    }
+
+    .orange-button {
+        padding-top: 8px;
+        padding-bottom: 8px;
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+}
+
+@media (max-width: 800px) {
+    .email-link {
+        display: none;
+    }
+
+    .scroll-down {
+        display: none;
+    }
+}
+
+@media (max-width: 600px) {
+    .tail-img {
+        top: 54%;
+    }
+}
+
+@media (max-width: 500px) {
+    .i-am-text {
+       padding-bottom: 8px;
+       font-size: 33px;
+    }
+
+    .my-name {
+        font-size: 45px;
+        letter-spacing: 0;
+        height: 55px;
+    }
+
+    .job-title {
+        font-size: 26px;
+    }
+
+    .i-am-container {
+       left: 43%;
+    }
+
+    .button-center {
+        padding-right: 30px;
+    }
+
 }
