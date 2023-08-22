@@ -4,6 +4,7 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: 200px;
+    position: relative;
 }
 
 .my-skills-headline-container {
@@ -14,6 +15,7 @@
 
     h1 {
         font-size: 90px;
+        font-weight: 700;
         margin-bottom: 16px;
         margin-top: 0;
         white-space: nowrap;
@@ -40,6 +42,7 @@
 }
 
 @keyframes bounce {
+
     0%,
     10%,
     20%,
@@ -90,11 +93,127 @@
     width: 200px;
     white-space: nowrap;
     margin-top: 32px;
+    z-index: 5;
 }
 
 .orange-blur {
     position: absolute;
     left: -250px;
+    top: 50%;
     transform: rotate(40deg);
     z-index: -1;
+}
+
+@media (max-width: 1470px) {
+    .my-skills-headline-container {
+        h1 {
+            font-size: 70px;
+        }
+    }
+}
+
+@media (max-width: 1100px) {
+    .my-skills-headline-container {
+        h1 {
+            font-size: 60px;
+        }
+    }
+}
+
+@media (max-width: 970px) {
+    .my-skills-container {
+        flex-direction: column;
+    }
+
+    .my-skills-headline-container {
+        order: 1;
+        width: auto;
+        align-items: flex-end;
+    }
+
+    .my-skills-icon-container {
+        justify-content: center;
+        order: 2;
+        width: auto;
+        margin-top: 64px;
+        margin-bottom: 100px;
+    }
+
+    .my-skills-button {
+        align-self: center;
+        position: absolute;
+        top: 90%;
+    }
+
+    .mobile-float {
+        text-align: right;
+    }
+}
+
+@media (max-width: 800px) {
+    .my-skills-container {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .my-skills-icon-container {
+        img {
+            height: 50px;
+            width: 50px;
+        }
+    }
+
+    .my-skills-line {
+        width: 30px;
+        top: 6%;
+    }
+
+    .my-skills-headline-container {
+        h1 {
+            font-size: 50px;
+        }
+    }
+
+    .my-skills-button {
+        width: 180px;
+    }
+}
+
+@media (max-width: 699px) {
+    .my-skills-line {
+        top: 5%;
+    }
+}
+
+@media (max-width: 600px) {
+    .my-skills-container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .my-skills-line {
+        width: 10px;
+    }
+}
+
+@media (max-width: 500px) {
+    .my-skills-headline-container {
+        h1 {
+            font-size: 45px;
+        }
+    }
+
+    .single-icon-container {
+        margin-left: 32px;
+        margin-right: 32px;
+    }
+
+    .orange-blur {
+        left: -300px;
+        top: 30%;
+    }
+
+     .my-skills-line {
+        top: 33px;
+    }
 }
