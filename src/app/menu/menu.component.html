@@ -8,10 +8,16 @@
     </div>
 
     <div>
-        <a (click)="scrollToComponent('aboutMe'); activeLink='about'" [class.active-link]="activeLink === 'about'">About me</a>
-        <a (click)="scrollToComponent('mySkills'); activeLink='skills'" [class.active-link]="activeLink === 'skills'">Skills</a>
-        <a (click)="scrollToComponent('myPortfolio'); activeLink='portfolio'" [class.active-link]="activeLink === 'portfolio'">Portfolio</a>
-        <!-- <a routerLink="" (click)="activeLanguage='en'" [class.orange]="activeLanguage === 'en'">EN</a>
-        <a routerLink="" (click)="activeLanguage='de'" [class.orange]="activeLanguage === 'de'">DE</a> -->
+        <img class="menu-toggle d-none" (click)="toggleMobileMenu()" [src]="mobileMenuActive ? '/assets/img/X.png' : '/assets/img/mobile-menu.png'">
+        <a class="hide-mobile" (click)="scrollToComponent('aboutMe'); activeLink='about'" [class.active-link]="activeLink === 'about'">About me</a>
+        <a class="hide-mobile" (click)="scrollToComponent('mySkills'); activeLink='skills'" [class.active-link]="activeLink === 'skills'">Skills</a>
+        <a class="hide-mobile" (click)="scrollToComponent('myPortfolio'); activeLink='portfolio'" [class.active-link]="activeLink === 'portfolio'">Portfolio</a>
+    </div>
+
+    <div class="mobile-nav" [ngClass]="{'active': mobileMenuActive}">
+        <a (click)="scrollToComponent('aboutMe'); toggleMobileMenu(); activeLink='about'" [class.active-link]="activeLink === 'about'">About me</a>
+        <a (click)="scrollToComponent('mySkills'); toggleMobileMenu(); activeLink='skills'" [class.active-link]="activeLink === 'skills'">Skills</a>
+        <a (click)="scrollToComponent('myPortfolio'); toggleMobileMenu(); activeLink='portfolio'" [class.active-link]="activeLink === 'portfolio'">Portfolio</a>
+        <a (click)="scrollToComponent('contact'); toggleMobileMenu(); activeLink='contact'" [class.active-link]="activeLink === 'contact'">Contact</a>
     </div>
 </header>

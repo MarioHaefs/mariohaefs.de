@@ -13,7 +13,8 @@ export class MenuComponent implements AfterViewInit {
   activeLanguage: string = '';
   adjustment_offset = 250;
   disableScrollCheck: boolean = false;
-  
+  mobileMenuActive = false;
+
 
   constructor(private scrollService: ScrollService, private renderer: Renderer2, @Inject(DOCUMENT) private document: Document) { }
 
@@ -56,4 +57,10 @@ export class MenuComponent implements AfterViewInit {
       this.disableScrollCheck = false;
     }, 1000);
   }
+
+
+  toggleMobileMenu() {
+    this.mobileMenuActive = !this.mobileMenuActive;
+  }
+
 }
