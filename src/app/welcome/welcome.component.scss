@@ -8,7 +8,7 @@
 .body-img {
     height: 600px;
     position: absolute;
-    top: 12%;
+    top: 15%;
     left: 8%;
     bottom: 0;
     z-index: 1;
@@ -114,4 +114,8 @@
 .button-center {
     display: flex;
     justify-content: center;
+}
+
+.margin {
+    margin-right: 32px;
 }

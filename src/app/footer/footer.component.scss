@@ -34,7 +34,7 @@
     font-size: 23px;
 }
 
-.impressum {
+.imprint {
     position: relative;
     padding-left: 4px;
     cursor: pointer;
@@ -56,3 +56,66 @@
     display: flex;
     flex-direction: column;
 }
+
+.margin {
+    margin-right: 32px;
+}
+
+@media (max-width: 800px) {
+    .footer-container {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .name-logo {
+        font-size: 40px;
+    }
+
+    .copyright {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 700px) {
+    .margin {
+        margin-right: 16px;
+    }
+}
+
+@media (max-width: 600px) {
+    .footer-container {
+        flex-direction: column;
+    }
+
+    .imprint {
+        text-align: center;
+        padding-left: 0px;
+
+        &:hover::before {
+            content: none;
+            border-bottom: none;
+        }
+
+        &:hover {
+            color: #FF4747;
+        }
+    }
+
+    .name-logo {
+        font-size: 48px;
+    }
+
+    .copyright {
+        font-size: 23px;
+    }
+
+    .margin {
+        margin-right: 32px;
+    }
+
+    .padding-bottom {
+        padding-bottom: 16px;
+    }
+
+}
+

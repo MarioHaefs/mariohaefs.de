@@ -11,15 +11,17 @@
                 <span>i</span>
                 <span class="orange">o</span>
             </div>
-            <a routerLink="/imprint" class="impressum">Imprint</a>
+            <a routerLink="/imprint" class="imprint">Imprint</a>
         </div>
         <span class="copyright">© Mario Haefs 2023</span>
-        <div>
+        <div class="padding-bottom">
             <a href="https://github.com/MarioHaefs" target="_blank">
                 <img class="social-icon margin" src="/assets/img/github.png" alt="Github">
-            </a>            
+            </a>
             <img (click)="scrollToComponent('contact');" class="social-icon margin" src="/assets/img/email.png">
-            <img class="social-icon" src="/assets/img/linkedin.png">
+            <a href="https://www.linkedin.com/login/de" target="_blank">
+                <img class="social-icon" src="/assets/img/linkedin.png">
+            </a>
         </div>
     </div>
 </div>
