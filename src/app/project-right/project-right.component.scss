@@ -2,3 +2,17 @@
     margin-right: 200px;
     text-align: right;
 }
+
+@media (max-width: 1080px) {
+    .project-right-addeds {
+        margin-right: 100px;
+    }
+}
+
+@media (max-width: 970px) {
+    .project-right-addeds {
+        margin-right: 0px;
+        text-align: center;
+        order: 2;
+    }
+}

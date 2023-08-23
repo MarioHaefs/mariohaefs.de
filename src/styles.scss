@@ -158,3 +158,53 @@ body {
     height: 0px;
     background: transparent;
 }
+
+@media (max-width: 1080px) {
+    .project-img-container {
+        margin-right: 100px;
+    }
+}
+
+@media (max-width: 970px) {
+    .project {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project-img-container {
+        margin-right: 0px;
+    }
+
+    .project-info {
+        text-align: center;
+    }
+}
+
+@media (max-width: 800px) {
+    .project {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+}
+
+@media (max-width: 600px) {
+    .project {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+@media (max-width: 500px) {
+    .project-info {
+        width: 300px;
+    }
+
+    .project-img { 
+        width: 300px;
+        height: auto;
+    }
+
+    .project {
+        margin-bottom: 100px;
+    }
+}
