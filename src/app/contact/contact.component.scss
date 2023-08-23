@@ -1,7 +1,6 @@
 .contact-content {
     padding-left: 100px;
     padding-right: 100px;
-    width: 100%;
     margin-bottom: 200px;
     position: relative;
 }
@@ -42,7 +41,7 @@ h2 {
 
 .contact-form {
     display: flex;
-    width: 100%;
+    justify-content: space-between;
 }
 
 form {
@@ -82,19 +81,22 @@ form {
         opacity: 1;
     }
 
-    input:focus, textarea:focus {
+    input:focus,
+    textarea:focus {
         outline: none;
     }
 
-    input:focus::placeholder, textarea:focus::placeholder {
+    input:focus::placeholder,
+    textarea:focus::placeholder {
         color: transparent;
         opacity: 0;
     }
 
-    input::placeholder, textarea::placeholder {
+    input::placeholder,
+    textarea::placeholder {
         font-size: 16px;
         font-weight: 300;
-    } 
+    }
 }
 
 .blur5 {
@@ -107,10 +109,116 @@ form {
 
 .go-up {
     position: absolute;
-    right: 15%;
+    right: 100px;
     bottom: -15%;
     cursor: pointer;
 }
 
+@media (max-width: 1470px) {
+    .contact-headline {
 
+        h1 {
+            font-size: 70px;
+        }
+    }
 
+    .blur5 {
+        transform: rotate(0deg);
+    }
+}
+
+@media (max-width: 1110px) {
+    .contact-headline {
+
+        h1 {
+            font-size: 60px;
+        }
+    }
+}
+
+@media (max-width: 970px) {
+    .contact-form {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-text-container {
+        width: auto;
+        margin-right: 0px;
+        margin-bottom: 64px;
+    }
+
+    form {
+        width: 100vw;
+        padding: 0 100px;
+        box-sizing: border-box;
+    }
+
+    .contact-headline {
+        margin-bottom: 32px;
+    }
+}
+
+@media (max-width: 800px) {
+    .contact-headline {
+
+        h1 {
+            font-size: 50px;
+        }
+    }
+
+    .contact-content {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    form {
+        padding: 0 50px;
+    }
+
+    .contact-line {
+        width: 30px;
+    }
+
+    .go-up {
+        right: 50px;
+    }
+}
+
+@media (max-width: 600px) {
+    .contact-content {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    form {
+        padding: 0 20px;
+    }
+
+    .go-up {
+        right: 20px;
+    }
+
+    .contact-line {
+        width: 10px;
+    }
+}
+
+@media (max-width: 500px) {
+    .contact-headline {
+
+        h1 {
+            font-size: 45px;
+        }
+    }
+
+    h2 {
+        font-size: 26px;
+    }
+
+    form {
+        button {
+            width: 225px;
+        }
+    }
+}
