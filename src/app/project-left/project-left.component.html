@@ -1,14 +1,13 @@
 <div class="project">
     <div class="project-img-container">
-        <img class="project-img" src="/assets/img/join.png">
+        <img class="project-img" [src]="imgSrc">
     </div>
 
     <div class="project-info">
-        <h2 class="project-h2">Join</h2>
-        <h3 class="project-h3">JavaScript | HTML | CSS</h3>
+        <h2 class="project-h2">{{title}}</h2>
+        <h3 class="project-h3">{{technologies}}</h3>
         <span>
-            Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign
-            users and categories.
+            {{description}}
         </span>
         <div class="button-container">
             <button class="button-red margin-right">Live test</button>

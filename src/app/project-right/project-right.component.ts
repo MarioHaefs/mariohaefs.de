@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-project-right',
@@ -6,5 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./project-right.component.scss']
 })
 export class ProjectRightComponent {
-
+  @Input() imgSrc!: string;
+  @Input() title!: string;
+  @Input() technologies!: string;
+  @Input() description!: string;
 }

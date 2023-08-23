@@ -3,6 +3,16 @@
 <app-about-me id="aboutMe"></app-about-me>
 <app-my-skills id="mySkills"></app-my-skills>
 <app-portfolio id="myPortfolio"></app-portfolio>
-<app-project-left></app-project-left>
-<app-project-right></app-project-right>
+<app-project-left 
+    [imgSrc]="'/assets/img/join.png'" 
+    [title]="'Join'" 
+    [technologies]="'JavaScript | HTML | CSS'" 
+    [description]="'Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.'"
+></app-project-left>
+<app-project-right
+    [imgSrc]="'/assets/img/pollo_loco.png'" 
+    [title]="'El Pollo Loco'" 
+    [technologies]="'JavaScript | HTML | CSS'" 
+    [description]="'A simple Jump-and-Run game based on an object-oriented approach. Help Pepe to find coins and poison bottles to fight against el pollo loco.'"
+></app-project-right>
 <app-contact id="contact"></app-contact>

@@ -1,8 +1,8 @@
 <div class="project">
 
     <div class="project-info project-right-addeds">
-        <h2 class="project-h2">El Pollo Loco</h2>
-        <h3 class="project-h3">JavaScript | HTML | CSS</h3>
+        <h2 class="project-h2">{{title}}</h2>
+        <h3 class="project-h3">{{technologies}}</h3>
         <span>
             A simple Jump-and-Run game based on an object-oriented approach. Help Pepe to find coins and poison bottles
             to fight against el pollo loco.
@@ -14,6 +14,6 @@
     </div>
 
     <div>
-        <img class="project-img" src="/assets/img/pollo_loco.png">
+        <img class="project-img" [src]="imgSrc">
     </div>
 </div>
