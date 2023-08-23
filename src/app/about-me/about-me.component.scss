@@ -40,13 +40,6 @@ p {
     margin-right: 46px;
 }
 
-.portrait-img {
-    height: 400px;
-    position: absolute;
-    bottom: 7%;
-    left: 64%;
-}
-
 .blur2 {
     position: absolute;
     bottom: 20%;
@@ -59,6 +52,7 @@ p {
     top: 15%;
     left: 62%;
     z-index: 3;
+    image-rendering: -webkit-optimize-contrast;
 }
 
 @media (max-width: 1470px) {

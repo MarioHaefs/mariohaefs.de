@@ -11,7 +11,6 @@ header {
     right: 0;
     left: 0;
     z-index: 10;
-    overflow-x: hidden;
 }
 
 .logo {
@@ -121,7 +120,7 @@ a.active-link {
     }
 
     .d-none {
-        display: block;
+        display: flex;
     }
 
     .mobile-nav {
