@@ -96,7 +96,7 @@
     z-index: 5;
 }
 
-.orange-blur {
+.blur3 {
     position: absolute;
     left: -250px;
     top: 50%;
@@ -177,6 +177,11 @@
     .my-skills-button {
         width: 180px;
     }
+
+    .blur3 {
+        height: 300px;
+        left: -10%;
+    }
 }
 
 @media (max-width: 699px) {
@@ -208,12 +213,12 @@
         margin-right: 32px;
     }
 
-    .orange-blur {
-        left: -300px;
-        top: 30%;
+    .my-skills-line {
+        top: 33px;
     }
 
-     .my-skills-line {
-        top: 33px;
+    .blur3 {
+        left: -20%;
+        top: 65%;
     }
 }

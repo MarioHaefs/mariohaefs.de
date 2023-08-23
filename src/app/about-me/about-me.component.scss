@@ -47,7 +47,7 @@ p {
     left: 64%;
 }
 
-.blur2-img {
+.blur2 {
     position: absolute;
     bottom: 20%;
     left: 75%;
@@ -98,7 +98,7 @@ p {
         width: auto;
     }
 
-    .blur2-img {
+    .blur2 {
         position: absolute;
         bottom: 0%;
         left: 70%;
@@ -117,6 +117,11 @@ p {
 
     .h1-about-me {
         font-size: 50px;
+    }
+
+    .blur2 {
+        height: 400px;
+        bottom: 40%;
     }
 }
 
@@ -138,6 +143,10 @@ p {
 
     .fix-margin {
         margin-right: 24px;
+    }
+
+    .blur2 {
+        left: 50%;
     }
 
 }
