@@ -10,4 +10,6 @@ export class ProjectRightComponent {
   @Input() title!: string;
   @Input() technologies!: string;
   @Input() description!: string;
+  @Input() testLink!: string;
+  @Input() gitLink!: string;
 }

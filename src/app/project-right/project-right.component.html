@@ -4,12 +4,15 @@
         <h2 class="project-h2">{{title}}</h2>
         <h3 class="project-h3">{{technologies}}</h3>
         <span>
-            A simple Jump-and-Run game based on an object-oriented approach. Help Pepe to find coins and poison bottles
-            to fight against el pollo loco.
+            {{description}}
         </span>
         <div class="button-container">
-            <button class="button-red margin-right">Live test</button>
-            <button class="button-transparent">Github</button>
+            <a [href]="testLink" target="_blank">
+                <button class="button-red margin-right">Live test</button>
+            </a>
+            <a [href]="gitLink" target="_blank">
+                <button class="button-transparent">Github</button>
+            </a>
         </div>
     </div>
 
