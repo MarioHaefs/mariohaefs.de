@@ -11,6 +11,10 @@ export class MySkillsComponent {
   constructor(private scrollService: ScrollService) { }
   
 
+  /**
+   * scroll to selected component
+   * @param componentId string
+   */
   scrollToComponent(componentId: string) {
     this.scrollService.scrollToComponent(componentId);
   }

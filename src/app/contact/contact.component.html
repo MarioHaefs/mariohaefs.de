@@ -15,11 +15,11 @@
         </div>
 
         <div>
-            <form>
-                <input placeholder="Your name" type="text" required>
-                <input placeholder="Your email" type="email" required>
-                <textarea placeholder="Your message" rows="10" cols="30" minlength="20" type="text" required></textarea>
-                <button class="orange-button">Send message :)</button>
+            <form (submit)="sendMail()" ngNativeValidate #myForm> 
+                <input placeholder="Your name" type="text" name="name" #nameField required>
+                <input placeholder="Your email" type="email" name="email" #emailField required>
+                <textarea placeholder="Your message" rows="10" cols="30" minlength="10" type="text" name="message" #messageField required></textarea>
+                <button #sendButton class="orange-button">Send message :)</button>
             </form>
         </div>
     </div>

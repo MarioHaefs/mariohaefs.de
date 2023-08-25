@@ -10,6 +10,11 @@ export class WelcomeComponent {
 
   constructor(private scrollService: ScrollService) { }
 
+
+  /**
+   * scroll to selected component
+   * @param componentId string
+   */
   scrollToComponent(componentId: string) {
     this.scrollService.scrollToComponent(componentId);
   }

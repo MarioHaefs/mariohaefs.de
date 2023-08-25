@@ -18,11 +18,19 @@ export class MenuComponent implements AfterViewInit {
 
   constructor(private scrollService: ScrollService, private renderer: Renderer2, @Inject(DOCUMENT) private document: Document) { }
 
+
+  /**
+   * checks which links are active
+   */
   ngAfterViewInit() {
     this.checkActiveLink();
   }
 
 
+  /**
+   * used to set the active link in the navigation bar based on the scroll position of the window
+   * @returns 
+   */
   @HostListener('window:scroll', ['$event'])
   checkActiveLink() {
     if (this.disableScrollCheck) return;
@@ -49,6 +57,10 @@ export class MenuComponent implements AfterViewInit {
   }
 
 
+  /**
+   * scroll to selected component
+   * @param componentId string
+   */
   scrollToComponent(componentId: string) {
     this.disableScrollCheck = true;
     this.scrollService.scrollToComponent(componentId);
@@ -59,6 +71,9 @@ export class MenuComponent implements AfterViewInit {
   }
 
 
+  /**
+   * toggle mobile menu on/off 
+   */
   toggleMobileMenu() {
     this.mobileMenuActive = !this.mobileMenuActive;
   }

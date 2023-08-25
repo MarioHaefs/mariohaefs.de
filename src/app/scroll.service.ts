@@ -9,6 +9,10 @@ export class ScrollService {
   constructor() { }
 
   
+  /**
+   * scroll service for all components   --> scrolls to selected component
+   * @param componentId string
+   */
   scrollToComponent(componentId: string) {
     let component = document.getElementById(componentId);
     if (component) {
