@@ -25,6 +25,10 @@ import { Renderer2 } from '@angular/core';
 export class PortfolioComponent {
   state = 'invisible';
 
+
+  /**
+   * triggers fly animation if you scroll near component
+   */
   fadeInAnimation() {
     let componentPosition = this.el.nativeElement.offsetTop;
     let scrollPosition = document.documentElement.scrollTop || document.body.scrollTop;
@@ -35,6 +39,7 @@ export class PortfolioComponent {
     }
   }
 
+  
   constructor(private el: ElementRef, private renderer: Renderer2) {
     this.state = 'invisible';
     this.renderer.listen('window', 'scroll', (event) => {

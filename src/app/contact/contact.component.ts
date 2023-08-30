@@ -32,7 +32,7 @@ export class ContactComponent {
 
   state = 'invisible';
 
-  constructor(private scrollService: ScrollService, private el: ElementRef, private renderer: Renderer2) { 
+  constructor(private scrollService: ScrollService, private el: ElementRef, private renderer: Renderer2) {
     this.state = 'invisible';
     this.renderer.listen('window', 'scroll', (event) => {
       this.fadeInAnimation();
@@ -48,7 +48,7 @@ export class ContactComponent {
     this.scrollService.scrollToComponent(componentId);
   }
 
-  
+
   /**
    * send a message to my server which send this message to my mail address -> also gives feedback if the sending of the message was successful
    */
@@ -97,11 +97,14 @@ export class ContactComponent {
   }
 
 
+  /**
+   * triggers fly animation if you scroll near component
+   */
   fadeInAnimation() {
     let componentPosition = this.el.nativeElement.offsetTop;
     let scrollPosition = document.documentElement.scrollTop || document.body.scrollTop;
     let offset = 500;
-  
+
     if (scrollPosition + offset >= componentPosition) {
       this.state = 'visible';
     }

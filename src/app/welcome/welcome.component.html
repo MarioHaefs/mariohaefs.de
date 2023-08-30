@@ -6,10 +6,10 @@
         <div class="i-am-container">
             <span class="i-am-text">I am</span>
             <div class="presentation-container">
-                <span class="my-name">Mario Haefs</span>
-                <span class="job-title red">FRONTEND DEVELOPER</span>
+                <span [@growIn]="state" class="my-name">Mario Haefs</span>
+                <span [@growIn]="state" class="job-title red">FRONTEND DEVELOPER</span>
                 <div class="button-center">
-                    <button (click)="scrollToComponent('contact');" class="orange-button">Let's talk!</button>
+                    <button [@growIn]="state" (click)="scrollToComponent('contact');" class="orange-button">Let's talk!</button>
                 </div>
             </div>
         </div>
@@ -17,7 +17,7 @@
 
     <img class="tail-img" src="/assets/img/tail.png">
 
-    <div class="socials-container">
+    <div class="socials-container" [@growIn]="state">
         <div class="social-line margin"></div>
         <a class="a-height" href="https://github.com/MarioHaefs" target="_blank">
             <img class="social-icon margin" src="/assets/img/github.png" alt="Github">

@@ -31,6 +31,10 @@ export class ProjectLeftComponent {
 
   state = 'invisible';
 
+
+  /**
+   * triggers fly animation if you scroll near component
+   */
   fadeInAnimation() {
     let componentPosition = this.el.nativeElement.offsetTop;
     let scrollPosition = document.documentElement.scrollTop || document.body.scrollTop;
