@@ -1,9 +1,9 @@
 <div class="project">
-    <div class="project-img-container">
+    <div class="project-img-container" [@fadeInFromLeft]="state">
         <img class="project-img" [src]="imgSrc">
     </div>
 
-    <div class="project-info">
+    <div class="project-info" [@fadeInFromRight]="state">
         <h2 class="project-h2">{{title}}</h2>
         <h3 class="project-h3">{{technologies}}</h3>
         <span>

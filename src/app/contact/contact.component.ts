@@ -1,11 +1,28 @@
 import { Component, ViewChild, ElementRef } from '@angular/core';
 import { ScrollService } from '../scroll.service';
+import { trigger, transition, style, animate, state } from '@angular/animations';
+import { Renderer2 } from '@angular/core';
+
 
 @Component({
   selector: 'app-contact',
   templateUrl: './contact.component.html',
-  styleUrls: ['./contact.component.scss']
+  styleUrls: ['./contact.component.scss'],
+  animations: [
+    trigger('fadeInFromLeft', [
+      state('invisible', style({ opacity: 0, transform: 'translateX(-100%)' })),
+      state('visible', style({ opacity: 1, transform: 'translateX(0)' })),
+      transition('invisible <=> visible', animate('400ms ease-in-out'))
+    ]),
+    trigger('fadeInFromRight', [
+      state('invisible', style({ opacity: 0, transform: 'translateX(100%)' })),
+      state('visible', style({ opacity: 1, transform: 'translateX(0)' })),
+      transition('invisible <=> visible', animate('400ms ease-in-out'))
+    ])
+  ]
 })
+
+
 export class ContactComponent {
   @ViewChild('myForm') myForm!: ElementRef;
   @ViewChild('nameField') nameField!: ElementRef;
@@ -13,7 +30,14 @@ export class ContactComponent {
   @ViewChild('messageField') messageField!: ElementRef;
   @ViewChild('sendButton') sendButton!: ElementRef;
 
-  constructor(private scrollService: ScrollService) { }
+  state = 'invisible';
+
+  constructor(private scrollService: ScrollService, private el: ElementRef, private renderer: Renderer2) { 
+    this.state = 'invisible';
+    this.renderer.listen('window', 'scroll', (event) => {
+      this.fadeInAnimation();
+    });
+  }
 
 
   /**
@@ -70,6 +94,17 @@ export class ContactComponent {
     this.nameField.nativeElement.value = "";
     this.emailField.nativeElement.value = "";
     this.messageField.nativeElement.value = "";
+  }
+
+
+  fadeInAnimation() {
+    let componentPosition = this.el.nativeElement.offsetTop;
+    let scrollPosition = document.documentElement.scrollTop || document.body.scrollTop;
+    let offset = 500;
+  
+    if (scrollPosition + offset >= componentPosition) {
+      this.state = 'visible';
+    }
   }
 
 

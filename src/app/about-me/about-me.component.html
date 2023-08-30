@@ -1,5 +1,5 @@
 <div class="about-me-container">
-    <div class="about-me-content">
+    <div class="about-me-content" [@fadeInFromLeft]="state">
         <h1 class="h1-about-me">About me</h1>
 
         <div>
@@ -31,7 +31,7 @@
     </div>
 
     <div>
-        <img class="circle-img" src="/assets/img/portrait-circle.png">
+        <img [@fadeInFromRight]="state" class="circle-img" src="/assets/img/portrait-circle.png">
         <img class="blur2" src="/assets/img/blur2.png">
     </div>
 </div>

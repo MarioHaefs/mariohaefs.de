@@ -1,6 +1,6 @@
 <div class="project">
 
-    <div class="project-info project-right-addeds">
+    <div class="project-info project-right-addeds" [@fadeInFromLeft]="state">
         <h2 class="project-h2">{{title}}</h2>
         <h3 class="project-h3">{{technologies}}</h3>
         <span>
@@ -16,7 +16,7 @@
         </div>
     </div>
 
-    <div>
+    <div [@fadeInFromRight]="state">
         <img class="project-img" [src]="imgSrc">
     </div>
 </div>

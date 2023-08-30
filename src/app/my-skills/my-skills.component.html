@@ -1,5 +1,5 @@
 <div class="my-skills-container">
-    <div class="my-skills-icon-container">
+    <div class="my-skills-icon-container" [@fadeInFromLeft]="state">
         <div class="single-icon-container">
             <img src="/assets/img/angular.png">
             <span>Angular</span>
@@ -44,16 +44,16 @@
 
     <div class="my-skills-headline-container">
         <div class="h1-container">
-            <h1>My skills</h1>
-            <div class="my-skills-line"></div>
+            <h1 [@fadeInFromRight]="state">My skills</h1>
+            <div [@fadeInFromRight]="state" class="my-skills-line"></div>
         </div>
 
-        <span class="mobile-float">
+        <span class="mobile-float" [@fadeInFromRight]="state">
             I was able to build my frontend development skills while creating various different projects.
             Take a look!
         </span>
 
-        <button (click)="scrollToComponent('contact');" class="orange-button my-skills-button">Get in touch</button>
+        <button [@fadeInFromRight]="state" (click)="scrollToComponent('contact');" class="orange-button my-skills-button">Get in touch</button>
     </div>
 
     <img class="blur3" src="/assets/img/blur3.png">

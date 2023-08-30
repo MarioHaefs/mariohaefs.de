@@ -1,11 +1,11 @@
 <div class="contact-content">
     <div class="contact-headline">
-        <div class="contact-line"></div>
-        <h1>Contact</h1>
+        <div [@fadeInFromLeft]="state" class="contact-line"></div>
+        <h1 [@fadeInFromLeft]="state">Contact</h1>
     </div>
 
     <div class="contact-form">
-        <div class="contact-text-container">
+        <div class="contact-text-container" [@fadeInFromLeft]="state">
             <h2>Got a problem to solve?</h2>
             <p>
                 Contact me through this form, I am interested in hearing you, knowing your ideas and contributing to
@@ -14,7 +14,7 @@
             <span>Need a Frontend developer? <b>Contact me!</b></span>
         </div>
 
-        <div>
+        <div [@fadeInFromRight]="state">
             <form (submit)="sendMail()" ngNativeValidate #myForm> 
                 <input placeholder="Your name" type="text" name="name" #nameField required>
                 <input placeholder="Your email" type="email" name="email" #emailField required>
@@ -25,6 +25,6 @@
     </div>
     <img class="blur5" src="/assets/img/blur5.png">
     <img class="blur1" src="/assets/img/blur1.png">
-    <img (click)="scrollToComponent('welcome');" class="go-up" src="/assets/img/go_up.png" onmouseover="this.src='/assets/img/go_up_orange.png'" onmouseout="this.src='/assets/img/go_up.png'">
+    <img [@fadeInFromRight]="state" (click)="scrollToComponent('welcome');" class="go-up" src="/assets/img/go_up.png" onmouseover="this.src='/assets/img/go_up_orange.png'" onmouseout="this.src='/assets/img/go_up.png'">
 
 </div>
